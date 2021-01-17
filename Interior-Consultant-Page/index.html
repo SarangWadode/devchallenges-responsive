@@ -26,10 +26,82 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
+        color:aliceblue;
+        background: black;
       }
-      * {box-sizing: border-box;}
+      * {
+        box-sizing: border-box;
+      }
+      
+      #navbar {
+        
+      }
+      #navbar ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        position: relative;
+
+      }
+      #navbar ul li {
+        padding: 10px 10px;
+      }
+      #head {
+        display: inline;
+        border: 1px solid white;
+        position:relative;
+        top:-3em;
+        left:1em;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      #info {
+        width: 15em;padding: 0.5em;
+      }
+      #content {
+        position: relative;
+        width: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #interior-image { 
+        margin-left: auto;
+        margin-right: auto;      
+        width: 25em;
+      }
+      #profile {
+        position: absolute;
+        top: 24em;
+        left: 15em;        
+        font-size:70%;
+        background: purple;
+        width: 50%;
+      }
+      #bio {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #profile-photo {
+        width: 15%;
+        height:20%;
+        border-radius: 50%;
+      }
+      #name {
+        padding-left: 1em;
+      }
+      #footer {
+        padding-top: 11em;
+        text-align: center;
+      }
 
     </style>
+
+
   </head>
   <body>
     <nav id="navbar">
@@ -39,16 +111,27 @@
         <li>About</li>
         <li>Contact</li>
       </ul>
-      <div>THIS INTERIOR</div>
-      <div id="container">
-        <section>
-          <h3>Modern interior</h3>
-          <p>A full-Service residential & commertial interior design and staging company offering professional organizing & eco-services.</p>
-          <p><strong>Read more → </strong></p>
-        </section>
-        <section>
-
-        </section>
-      </div>
+    </nav>
+    <div id="head">THIS INTERIOR</div>
+    <div id="container">
+      <section id="info">
+        <h2>Modern interior</h3>
+        <p>A full-Service residential & commertial interior design and staging company offering professional organizing & eco-services.</p>
+        <p><strong>Read more → </strong></p>
+      </section>
+      <section id="content">
+        <img id="interior-image" src="https://github.com/SarangWadode/devchallenges-responsive/raw/main/Interior-Consultant-Page/photo1.png" alt="Interior Design Image">
+          
+        <div id="profile">
+          <section id="bio">
+            <img id="profile-photo" src="https://github.com/SarangWadode/devchallenges-responsive/raw/main/Interior-Consultant-Page/photo2.png" alt="Profile Picture">
+            <div id="name"><p><strong>Aliza Webber</strong></p>
+            <p>Interior Designer</p><div>
+          </section>
+          <section id="time">Designed in 2020 by Aliza Webber</section>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">Sarang Wadode @ DevChallenges.io</footer>
   </body>
 </html>
