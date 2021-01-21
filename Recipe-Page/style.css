@@ -92,8 +92,10 @@ span {
 }
 #source {
     position: absolute;
-    top: 145em;
+    top: 143em;
     color: grey;
+    font-style: italic;
+    text-align: center;
 }
 #footer {
     position: absolute;
@@ -110,11 +112,11 @@ span {
         justify-content: center;
     }
     #det {
-        width: 25em;
+        width: 30em;
     }
     #cheesecake {
         top: 11em;
-        width: 21em;
+        width: 27em;
     }
     h1 {
         font-size: 30px;
@@ -122,15 +124,15 @@ span {
     #content {
         position: relative;
         top: 20em;
-        width: 23em;
+        width: 30em;
         display: flex;
         flex-direction: column;
     }
     #yield-time { 
-        top: 4em;
+        top: 5.5em;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 22em;
+        width: 30em;
         height: 7em;
         box-shadow: none;
     }
@@ -147,22 +149,81 @@ span {
     #in {
         left:0;
         top:11em;
-        width: 22.5em;
+        width: 30em;
     }
     label {
         padding-left: 5px
     }
     #space {margin-left: 5px;}
     #source {
-        top: 180em;
+        top: 150em;
     }
     #footer {
         position: absolute;
-        top: 188em;
-        width:23em;
-        text-align: center;
-        
+        top: 155em;
+        width:30em;
+        text-align: center;        
+    } 
+}
+@media screen and (max-width:500px) {
+    body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    #det {
+        width: 20em;
+        top: 4em;
+    }
+    #cheesecake {
+        top: 11em;
+        width: 18em;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    #content {
+        position: relative;
+        top: 20em;
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+    }
+    #yield-time { 
+        top: 2.5em;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 20em;
+        height: 7em;
+        box-shadow: none;
+    }
+    #time {
+        display:flex;
+    }
+    #left {
+        padding: 10px 5px;
+    }
+    #text,#info {
+        padding-left: 0;
     }
 
-    
+    #in {
+        left:0;
+        top:11em;
+        width: 20em;
+    }
+    label {
+        padding-left: 5px
+    }
+    #space {margin-left: 5px;}
+    #source {
+        width: 20em;
+        top: 195em;
+    }
+    #footer {
+        position: absolute;
+        top: 201em;
+        width:20em;
+        text-align: center;        
+    } 
 }
