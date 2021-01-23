@@ -86,7 +86,12 @@ body {
     padding: 70px 0;
 }
 @media screen and (max-width:600px) {
+    #photo {
+        width: 100px;
+        height: 120px;
+    }
     #gallery {
+        margin: 25px 20px;
         gap: 20px;
     }
 }
