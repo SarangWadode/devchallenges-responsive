@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+#container {
+    display: flex;
+}
+#content {
+    padding-top: 20px;
+    width: 315px;
+} 
+#box {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+
+}
+input,input:hover,select {
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+#parts {
+    display: flex;
+    width: 300px;
+}
+select {
+    width: 150px;
+}
+.one {
+    padding-right: 15px;
+    width: 150px;
+}
+.two{
+    width: 150px;
+}
+
+
+
+
+
+
+#cart {
+    background: rgb(223, 212, 212);
+    margin-left: 20px;
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+}
+#product {
+    display: flex;
+    padding: 50px;
+}
+#image {
+    width:90px;
+    border-radius: 10px;
+}
+#details {
+    padding: 10px;
+}
+#inc {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+#footer {
+    padding: 40px 0;
+    text-align: center;
+}

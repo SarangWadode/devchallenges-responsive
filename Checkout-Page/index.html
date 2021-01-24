@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="StyleSheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div>
+      <h1>Checkout</h1>
+
+      <div id="container">
+        <section id="form">
+          <form action="#" id="form" autocomplete="on">
+            <div id="content">
+              <h3>Contact information</h3>
+              <label for="email">E-mail</label>
+              <div id="box">
+                <span class="material-icons">email</span>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." size="33">
+              </div>
+              
+              <label for="phone">Phone</label>
+              <div id="box">
+                <span class="material-icons">call</span>
+                <input type="tel" id="phone" name="phone" placeholder="Enter 10 digit phone no..." pattern="[0-9]{10}" size="33">
+              </div>
+            </div> 
+
+            <div id="content">
+              <h3>Shipping Address</h3>
+              <label for="name">Full name</label>
+              <div id="box">
+                <span class="material-icons">account_circle</span>
+                <input type="text" id="name" name="name" placeholder="Sarang wadode" size="33" >
+              </div>
+
+              <label for="address">Address</label>
+              <div id="box">
+                <span class="material-icons">home</span>
+                <input type="text" id="address" name="address" placeholder="Your address..." size="33" >
+              </div>
+
+              <label for="city">City</label>
+              <div id="box">
+                <span class="material-icons">location_city</span>
+                <input type="text" id="city" name="city" placeholder="Your city..." size="33" >
+              </div>
+
+              <div id="parts">
+                <div class="part one">
+                  <label for="country">Country</label>
+                  <div id="box">
+                    <span class="material-icons">public</span>
+                    <select for="country" size="">
+                      <option value="" disabled selected>Your country...</option>
+                      <option value="india">India</option>
+                      <option value="US">US</option>
+                      <option value="Australia">Australia</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="part two">
+                  <label for="post">Postal code</label>
+                  <div id="box">
+                    <span class="material-icons">markunread_mailbox</span>
+                    <input type="text" id="post" name="post" placeholder="Your postal code..." >
+                 </div>
+                </div>
+              </div>
+              
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox">Save this information for next time</label>
+
+            </div> 
+            <input type="button" onclick="alert('Checkout succesfull :)')" value="continue">
+          </form>
+        </section>
+
+        <section id="cart">
+          <div id="product">
+            <img src="Photos/photo1.png" alt="product-image" id="image">
+            <div id="details">
+              <h3>Vintage Backbag</h3>
+              <div><span>$54.99</span>$94.99</div>
+            </div>
+          </div>
+
+          <div id="product">
+            <img src="Photos/photo2.png" alt="product-image" id="image">
+            <div id="details">
+              <h3>Levi Shoes</h3>
+              <div><span>$74.99</span>$124.99</div>
+            </div>
+          </div>
+          
+          
+          <div id="bill">
+            <hr>
+            <div id="inc">
+              <div id="text">Shipping</div>
+              <div id="price">$19</div>
+            </div>
+            <hr>
+
+            <div id="inc">
+              <div id="text">Total</div>
+              <div id="price">$148.98</div>
+            </div>
+  
+          </div>
+
+        </section>
+      </div>
+      
+      <footer id="footer">Sarang Wadode @ DevChallenges</footer>
+    </div>
+  </body>
+
+</html>
