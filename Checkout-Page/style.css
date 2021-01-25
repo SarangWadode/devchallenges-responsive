@@ -1,21 +1,25 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 #container {
     display: flex;
+    margin-top: -20px;
 }
 #content {
-    padding-top: 20px;
-    width: 315px;
+    padding: 20px;
+    width: 325px;
 } 
 #box {
-    border: 2px solid black;
+    border: 2px solid #828282;
     border-radius: 10px;
     padding: 5px;
     display: flex;
-
+    margin-bottom: 10px;
 }
+
 input,input:hover,select {
     border: none;
     outline: none;
@@ -27,44 +31,83 @@ input,input:hover,select {
 }
 select {
     width: 150px;
+    background: #fff;
 }
 .one {
-    padding-right: 15px;
-    width: 150px;
+    padding-right: 10px;
+    width: 160px;
 }
 .two{
-    width: 150px;
+    width: 180px;
 }
-
-
-
-
-
-
+#submit {
+    margin-left: 236px;
+    display: block;
+    width: 110px;
+    height: 40px;
+    background:#F2994A;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
 #cart {
-    background: rgb(223, 212, 212);
-    margin-left: 20px;
-    width: 315px;
+    background: #F2F2F2;    
     display: flex;
     flex-direction: column;
-
+    width: 330px;
+    height: 450px;
     border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
-#product {
+#product{
     display: flex;
-    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 #image {
     width:90px;
     border-radius: 10px;
 }
 #details {
-    padding: 10px;
+    padding-left: 10px;
+    margin-top: -20px;
 }
 #inc {
     display: flex;
     justify-content: space-between;
     margin: 20px;
+}
+#cost {
+    margin-top: -20px;
+}
+strong {
+    color: coral;
+    padding-right: 20px;
+}
+#prod-no {
+    border: 1px solid black;
+    width:80px;
+    border-radius: 10px;
+    height: 30px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px 0 10px;
+}
+#count {
+    text-align: center;
+    background: #F2F2F2;
+}
+#sign {
+    background: #E0E0E0;;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
