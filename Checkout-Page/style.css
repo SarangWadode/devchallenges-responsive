@@ -4,6 +4,9 @@ body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
 }
+h1 {
+    margin-left: 10px;
+}
 #container {
     display: flex;
     margin-top: -20px;
@@ -84,7 +87,7 @@ select {
 }
 strong {
     color: coral;
-    padding-right: 20px;
+    padding-right: 80px;
 }
 #prod-no {
     border: 1px solid black;
