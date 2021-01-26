@@ -21,75 +21,155 @@
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+    <link rel="stylesheet" href="style.css"> 
 
-      ul {
-        padding-left: 24px;
-      }
+    <title>Edie homepage</title>
 
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <div id="container">
+      <h3>Edie</h3>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+      <nav id="navbar">
+        <ul>
+          <li><a id="link" href="#container">Home</a></li>
+          <li><a id="link" href="#service">Service</a></li>
+          <li><a id="link" href="#our-work">Our Works</a></li>
+          <li><a id="link" href="#info">Clients</a></li>
+          <li><a id="link" href="#footer">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div id="header">
+
+        <div id="blue">Unhappy with your website?</div>
+        <div id="about-us"><h2>We create Beautiful and fast web services</h2></div>
+        <img src="heroImage.jpg" alt="Team Image" id="team-photo">
+        <div id="story">
+          <h2>Story, emotion and purpose</h2>
+          <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+        </div>
+        <div id="cont">
+          <label for="mail">Want us to contact you?</label><br>
+          <div id="join">
+            <input type="emai" name="email" id="email" placeholder="Email">
+            <input type="submit" id="jn" value="Join">
+          </div> 
+        </div>
+
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div id="middle">
+        <section class="section one">
+          <div id="subhead">We offer high demand services</div>
+          <div id="service">
+            <div class="service one">
+              <span style="background: #2D9CDB" class="material-icons">edit</span><br>
+              <b>UR/UX Design</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+              <div id="button">Get Started</div>
+            </div>
+            <div class="service two">
+              <span style="background: #27AE60;" class="material-icons">code</span><br>
+              <b>Front End</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+              <div id="button">Get Started</div>
+            </div>
+            <div class="service three">
+              <span style="background: #EB5757;" class="material-icons">list</span><br>
+              <b>Back End</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+              <div id="button">Get Started</div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="section two">
+          <div id="subhead">Good design means good business</div>
+          <div id="our-work">
+            <div class="item one">
+              <img src="smarthome.jpg" alt="smart home dashboard" id=image>
+              <div id="light">Full stack application</div>
+              <div id="page">Smart home dashboard</div>
+            </div>
+            <div class="item one">
+              <img src="onboard.png" alt="Onboard application" id=image>
+              <div id="light">UX/UI design</div>
+              <div id="page">Onboard application</div>
+            </div>
+            <div class="item one">
+              <img src="booking.png" alt="Booking System" id=image>
+              <div id="light">Mobile application</div>
+              <div id="page">Booking System</div>
+            </div>
+            <div class="item one">
+              <img src="juice-product.png" alt="Juice product homepage" id=image>
+              <div id="light">Front end application on</div>
+              <div id="page">Juice product homepage</div>
+            </div>
+          </div>
+          <div id="see-more">see more →</div>
+        </section>
+
+        <section class="section three">
+          <div id="info">
+            <div id="red">Meet the team</div>
+            <div id="subhead">We are chilled and a laidback team</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div id="photos">
+            <img src="person1.png" id="one">
+            <img src="person2.png" id="two">
+            <img src="person3.png" id="three">
+          </div>
+        </section>
+
+        <section class="section four">
+          <div id="quote"></div>
+          <div id="profile">
+            <img src="person4.png" id="pro-pic">
+            <div id="name">
+              <strong>Carlos Tran</strong>
+              <p>The Decorate Gatsby</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div id="footer">
+        <div id="navbar-foot">
+          <ul>
+            <li><a id="link" href="#navbar">Home</a></li>
+            <li><a id="link" href="#service">Service</a></li>
+            <li><a id="link" href="#our-work">Our Works</a></li>
+            <li><a id="link" href="#info">Clients</a></li>
+            <li><a id="link" href="#footer">Contacts</a></li>
+          </ul>
+        </div>
+        <div id="social-media">
+          <h3>Eddie</h3>
+          <div id="sites">
+            <img src="instagram.svg" alt="instagram" id="instagram" style="background: black;">
+            <img src="linkedin.svg" alt="linkedin" id="linkedin" style="background: black;">
+            <img src="twitter.svg" alt="twitter" id="twitter" style="background: black;">
+          </div>
+        </div>
+        <div>
+          <label for="mail">Want us to contact you?</label><br>
+          <div id="join">
+            <input type="emai" name="email" id="email" placeholder="Email">
+            <input type="submit" id="jn" value="Join">
+          </div> 
+        </div>
+      </div>
+
     </div>
+    
   </body>
 </html>
