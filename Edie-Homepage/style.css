@@ -7,7 +7,7 @@ html {
 body {
     font-family: Poppins,sans-serif;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 h3 {
     margin-left: 20px;
@@ -47,6 +47,8 @@ h3 {
     max-width: 800px;
     height: 250px;
     border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 #story {
     width: 270px;
@@ -92,7 +94,7 @@ p {
 #middle {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 .section {
     margin-top: 40px;
@@ -105,7 +107,7 @@ p {
 }
 #service {
     display: flex;
-    margin-left: -10px;
+    margin-left: -22px;
 }
 .service {
     width: 220px;
@@ -229,7 +231,81 @@ footer {
 #navbar-foot ul {
     padding-top: 20px;
     list-style-type: none;
+    margin-left: -60px;
 }
 #navbar-foot a{
     color: #FFF;
 }
+@media screen and (max-width:900px) {
+    #team-photo {
+        max-width: 700px;
+    }
+    #middle {
+        margin-left: 35px;
+    }
+    #footer {
+        padding: 0 48em;
+    }
+}
+@media screen and (max-width:750px) {
+    #header {
+        align-items: center;
+        padding: 20px 5px;
+    }
+    #blue {
+        margin-right: 85px;
+    }
+    #blue,#about-us,#story,#cont {
+        margin-left: 0;
+    }
+    #team-photo {
+        max-width: 350px;
+        height: 150px;
+    }
+    .section {
+        margin-top: 20px;
+    }
+    #middle {
+        align-items: center;
+        margin-left: 3px;
+    }
+    #service {
+        flex-direction: column;
+    }
+    #our-work {
+        grid-template-columns: 300px;
+        justify-content: center;
+        padding: 30px 0;
+    }
+    .service {
+        width: 270px;
+    }
+    #on {
+            margin-top: 0;
+    }
+    #see-more {
+        margin-left: 0;
+    }
+    .three,.four {
+        flex-direction: column;
+        align-items: center;
+    }
+    #info {
+        margin-left: -50px;
+    }
+    #quote {
+        width: 320px;
+    }
+    #photos {
+        margin-left: 0;
+    }
+    #profile {
+        margin-top: 20px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 55em;
+    }
+
+}    
