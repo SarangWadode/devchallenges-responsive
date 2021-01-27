@@ -5,12 +5,15 @@ html {
     box-sizing: border-box;
 }
 body {
-    font-family: Poppins,sans-serif;
-    display: flex;
-    justify-content: center;
+    font-family: Poppins,sans-serif; 
 }
-h3 {
-    margin-left: 20px;
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#head{
+    margin-left: -370px;  
 }
 #navbar {
     position: absolute;
@@ -214,7 +217,7 @@ span {
     margin-right: 20px;
 }
 footer {
-    margin: 0 -50em;
+    width: 100vw;
     color: #FFF;
     background: #000;
     text-align: center;
@@ -222,7 +225,6 @@ footer {
 }
 #footer {
     text-align: left;
-    padding: 0 43em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -242,9 +244,6 @@ footer {
     }
     #middle {
         margin-left: 35px;
-    }
-    #footer {
-        padding: 0 48em;
     }
 }
 @media screen and (max-width:750px) {
@@ -302,10 +301,16 @@ footer {
     #profile {
         margin-top: 20px;
     }
+    .footer {
+        flex-direction: column;
+    }
+    #navbar-foot ul {
+        margin-left: -180px;
+    }
     #footer {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 0 55em;
+        align-items: center;
+        margin-bottom: 40px;
     }
 
 }    
