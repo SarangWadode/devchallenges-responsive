@@ -13,10 +13,10 @@ body {
     align-items: center;
 }
 #head{
-    margin-left: -370px;  
+    margin-left: -600px;  
 }
 #navbar {
-    position: absolute;
+    position: fixed;
     top: 5px;
     right: 50px;
 }
@@ -28,7 +28,7 @@ body {
     text-decoration: none;
     color: #333333;
     font-weight: 500;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 #header {
     display: flex;
@@ -48,7 +48,7 @@ body {
 }
 #team-photo {
     max-width: 800px;
-    height: 250px;
+    
     border-radius: 15px;
     margin-right: auto;
     margin-left: auto;
@@ -159,7 +159,7 @@ span {
     border-radius: 10px;
 }
 #on {
-    margin-top: 100px;
+    margin-top: 130px;
 }
 #light {
     font-weight: 300;
@@ -238,6 +238,9 @@ footer {
 #navbar-foot a{
     color: #FFF;
 }
+#navbar-transition {
+    display: none;
+}
 @media screen and (max-width:900px) {
     #team-photo {
         max-width: 700px;
@@ -247,6 +250,95 @@ footer {
     }
 }
 @media screen and (max-width:750px) {
+    #navbar-transition {
+        display: block;
+        position: relative;
+    }
+    #checkbox {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 3;
+        width: 2.3em;
+        height: 2.1em;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    #checkbox:hover,
+      #checkbox:focus {
+        outline: none;
+      }
+
+    .bar {
+        position: fixed;
+        right: 33px;
+        background: #000;
+        width: 33px;
+        height: 5px;
+        transition: background 300ms,transform 300ms;
+        margin-top: 4px;
+        z-index: 2;
+        border-radius: 6px;
+    }
+    .ek {
+        top: 31px;
+    }
+    .don {
+        top: 39px;
+    }
+    .tin {
+        top: 48px;
+    }
+    #new-navbar {
+        position: fixed;
+        top: -110vh;
+        left: 0;
+        width: 100vw;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        background: rgba(29, 27, 27, 0.9);
+        transition: top 300ms;
+    }
+    #new-navbar ul {
+        list-style: none;
+        margin-left: -70px;
+    }
+    #new-navbar a{
+        color:#FFF;
+    }
+    #new-navbar li{
+        color:rgb(199, 190, 190);
+        padding-top: 30px;
+    }
+    #checkbox:checked~.ek {
+        top: 39px;
+        transform: rotate(135deg);
+    }
+    #checkbox:checked~.don {
+        display: none;
+    }
+    #checkbox:checked~.tin {
+        top: 39px;
+        transform: rotate(-135deg);
+    }
+    #checkbox:checked~#new-navbar {
+        top: -10vh;
+    }
+    #checkbox:checked~.bar {
+        background: #fff;
+    }
+    #navbar {
+        display: none;
+    }
+
+    #head{
+        margin-left: -250px;  
+    }
     #header {
         align-items: center;
         padding: 20px 5px;
@@ -259,7 +351,6 @@ footer {
     }
     #team-photo {
         max-width: 350px;
-        height: 150px;
     }
     .section {
         margin-top: 20px;
