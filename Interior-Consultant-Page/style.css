@@ -1,0 +1,224 @@
+body {
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    background: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    position: relative;
+}
+
+#navbar ul li {
+    padding: 10px 10px;
+}
+
+#head {
+    display: inline;
+    border: 1px solid white;
+    position: relative;
+    top: -1.5em;
+    left: 1em;
+}
+
+#container {
+    margin-top: 5em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#info {
+    width: 15em;
+    height: 500px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10em;
+}
+
+#content {
+    position: relative;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#interior-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    border-radius: 7px;
+}
+
+#profile {
+    position: absolute;
+    top: 40em;
+    left: 30em;
+    font-size: 70%;
+    background: black;
+    width: 18em;
+    height: 5em;
+    border-radius: 7px;
+}
+
+#bio {
+    display: flex;
+    padding-left: 1em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#profile-photo {
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+#name {
+    padding-left: 1em;
+}
+
+#footer {
+    padding-top: 8em;
+    text-align: center;
+}
+
+#mobile-view {
+    display: none
+}
+
+@media screen and (max-width:800px) {
+    #head {
+        top: 1em;
+        left: 1em;
+    }
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #info {
+        width: 23em;
+        height: 15em;
+        margin-right: 0;
+    }
+    #content {
+        width: 23em;
+    }
+    #interior-image {
+        width: 20em;
+    }
+    #profile {
+        position: absolute;
+        top: 20em;
+        left: 10em;
+        font-size: 70%;
+        background: black;
+        width: 18em;
+        height: 5em;
+    }
+    #navbar {
+        display: none;
+    }
+    #mobile-view {
+        display: block;
+    }
+    #display a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+    #display ul {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        position: absolute;
+        flex-direction: column;
+        font-size: 20px;
+        margin-top: -40px;
+        font-weight: bold;
+    }
+    #display ul li {
+        padding: 20px;
+    }
+    #mobile-view {
+        position: relative;
+    }
+    #checkbox {
+        width: 3em;
+        height: 3em;
+        margin: 1em 1.3em 0 0;
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    #checkbox:hover,
+    #checkbox:focus {
+        outline: none;
+    }
+    .bar {
+        width: 3em;
+        position: absolute;
+        height: 0.4em;
+        background: aliceblue;
+        margin: 1em 0.8em 0 0;
+        z-index: 2;
+        transition: transform 500ms;
+        right: 0;
+    }
+    .one {
+        top: 0em;
+    }
+    .two {
+        top: 0.8em;
+    }
+    .three {
+        top: 1.6em;
+    }
+    #display {
+        width: 100%;
+        background: black;
+        position: absolute;
+        height: 45em;
+        overflow: hidden;
+        top: -55em;
+        transition: top 300ms;
+    }
+    #checkbox:checked~.one {
+        transform: rotate(135deg);
+        top: 0.8em;
+    }
+    #checkbox:checked~.two {
+        display: none;
+    }
+    #checkbox:checked~.three {
+        transform: rotate(45deg);
+        top: 0.8em;
+    }
+    #checkbox:checked~#display {
+        top: 0px;
+        z-index: 1;
+    }
+}

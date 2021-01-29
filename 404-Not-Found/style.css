@@ -1,0 +1,63 @@
+body {
+    font-family: 'Space Mono', monospace;
+    color: #333333
+}
+
+#header {
+    margin: 50px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#container {
+    display:flex;
+    margin: 100px 50px;
+}
+#image img {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+#info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+  #info p {
+    margin-right: 50px;
+}
+#home {
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    padding: 15px;
+    color:cornsilk;
+    background-color:black;
+    border-radius: 15px;
+    margin: 30px 0;
+    text-align: center;
+}
+#footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}  
+@media screen and (max-width:600px) {
+    #header {
+        margin: 25px;
+    }
+    #image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 25px;
+    }
+    #info p {
+        margin: auto;
+    }
+    #home {
+        margin: 25px auto;
+    }
+}
