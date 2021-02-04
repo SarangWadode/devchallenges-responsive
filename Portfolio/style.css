@@ -1,4 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(250, 248, 242);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 900px;
+    max-height: 300px;
+}
+
+#profile {
+    max-width: 240px;
+    max-height: 260px;
+    padding: 17px;
+    border-radius: 25px;
+}
+
+#bio-data {
+    padding: 0 20px;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    margin-top: -20px;
+}
+
+#icon {
+    display: flex;
+}
+
+#icon div {
+    padding-right: 10px;
+}
+
+#mail {
+    cursor: pointer;
+}
+
+.two {
+    display: grid;
+    gap: 20px;
+    max-width: 870px;
+    grid-template-columns: 30% 70%;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+#skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#blog {
+    background: #FFF;
+    border-radius: 12px;
+    padding: 0 30px;
+}
+
 #symbol {
     width: 50px;
     height: 50px;
+}
+
+.certificate img {
+    width: 100px;
 }
