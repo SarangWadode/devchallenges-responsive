@@ -11,4 +11,4 @@ Solutions for challenges at [DevChallenges](https://devchallenges.io/paths/respo
 |05|My Gallery|[Live Demo](https://sarangwadode.github.io/devchallenges-responsive/My-Gallery/)|[My Gallery DevChallenges](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U)|
 |06|Checkout Page|[Live Demo](https://sarangwadode.github.io/devchallenges-responsive/Checkout-Page/)|[Checkout Page DevChallenges](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U)|
 |07|Edie Homepage|[Live Demo](https://sarangwadode.github.io/devchallenges-responsive/Edie-Homepage/)|[Edie Homepage DevChallenges](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U)|
-
+|08|Portfolio|[Live Demo](https://sarangwadode.github.io/devchallenges-responsive/Portfolio/)|[Portfolio](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U)|
