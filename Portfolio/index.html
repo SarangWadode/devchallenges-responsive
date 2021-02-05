@@ -10,7 +10,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -24,7 +25,7 @@
     <div id="container">
 
         <section class="section one">
-            <div id="profile-photo"><img src="photo/profile.jpeg" alt="profile" id="profile"></div>
+            <div id="profile-photo"><img src="photos/profile.jpeg" alt="profile" id="profile"></div>
             <div id="bio-data">
                 <div id="about-me">
                     <div id="name">
@@ -53,7 +54,7 @@
 
         <section class="section two">
             <section id="skills">
-                <h3>Skills I'am having</h3>
+                <h3>I am good at</h3>
                 <div id="skill">
                     <div>Python</div>
                     <img id="symbol" src="svg files/python-5.svg">
@@ -90,20 +91,15 @@
             </section>
 
             <section id="blog">
-                <div id="">
-                    <h3>Centering in CSS</h3>
+                <div id="tricks">
+                    <h3>Centering in CSS:- Tricks to center things in CSS</h3>
                     <img src="https://i.ytimg.com/vi/AXc1N4S0Vck/hqdefault.jpg" alt="Centering in CSS">
                 </div>
                 <p>Centering in CSS is a notorious challenge, fraught with jokes and mockery. 2020 CSS is all grown up and now we can laugh at those jokes honestly, not through clenched teeth.</p>
                 <p>There are difference types of centering. From differing use cases, number of things to center, etc. In order to demonstrate a rationale behind "a winning" centering technique, I created The Resilience Ringer. It's a series of stress tests
                     for each centering strategy to balance within and you to observe their performance. At the end, I reveal the highest scoring technique, as well as a "most valuable." Hopefully you walk away with new centering techniques and solutions.</p>
+                <a href="" id="dev">dev.to</a>
                 <a id="continue" href="https://web.dev/centering-in-css/">Continue reading</a>
-                <a href="">dev.to</a>
-            </section>
-
-            <section id="experiences">
-                <h3>Experience</h3>
-                <p>I'm a begginer,I don't have any experience and still struggling to get first internship 😥</p>
             </section>
 
             <section id="certificates">
@@ -116,13 +112,24 @@
                     <button class="button"><a href="https://www.freecodecamp.org/certification/sarangwadode/responsive-web-design" id="link" alt="link" target="_blanck">FCC</a></button>
                 </div>
             </section>
+
+            <section id="experiences">
+                <h3>Experience</h3>
+                <p>I'm a begginer so I don't have any experience and I'am trying to get my first internship 🙃</p>
+            </section>
+
         </section>
 
-        <section class="section three"></section>
+        <section class="section three">
+            <div id="projects">
+                <h3>Projects</h3>
+                <div><button class="button demo"><a href="" id="link" alt="link" target="_blanck">Responsive</a></button></div>
+            </div>
+        </section>
 
         <section class="section four">
-            <div id="recipe-page">
-                <img src="photos/recipe_image.png" alt="recipe-page">
+            <div class="project recipe-page">
+                <img id="project-photo" src="photos/recipe_image.png" alt="recipe-page">
                 <p>#HTML #CSS #reponsive</p>
                 <h3>Recipe Page</h3>
                 <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
@@ -131,18 +138,18 @@
                     <button class="button code"><a href="https://github.com/SarangWadode/devchallenges-responsive" id="link" alt="link" target="_blanck">Code</a></button>
                 </div>
             </div>
-            <div id="my-gallery">
-                <img src="photos/gallery_image.png" alt="my-gallery">
+            <div class="project my-gallery">
+                <img id="project-photo" src="photos/gallery_image.png" alt="my-gallery">
                 <p>#HTML #CSS #reponsive</p>
                 <h3>My Gallery</h3>
-                <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io</p>
+                <p>In this project, I work with HTML and CSS to create responsive page. This is similiar with instagram profile page. Design is from devchallenge.io</p>
                 <div id="buttons">
                     <button class="button demo"><a href="https://sarangwadode.github.io/devchallenges-responsive/My-Gallery/" id="link" alt="link" target="_blanck">Demo</a></button>
                     <button class="button code"><a href="https://github.com/SarangWadode/devchallenges-responsive" id="link" alt="link" target="_blanck">Code</a></button>
                 </div>
             </div>
-            <div id="checkout">
-                <img src="photos/checkout_image.png" alt="checkout">
+            <div class="project checkout">
+                <img id="project-photo" src="photos/checkout_image.png" alt="checkout">
                 <p>#HTML #CSS #reponsive</p>
                 <h3>Checkout</h3>
                 <p>In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io</p>
@@ -153,6 +160,10 @@
             </div>
         </section>
 
+        <section id="footer">
+            <hr>
+            <footer>Sarang Wadode @ DevChallenges.io</footer>
+        </section>
 
 
     </div>

@@ -4,6 +4,8 @@
 
 body {
     background: rgb(250, 248, 242);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(31, 28, 28)
 }
 
 #container {
@@ -12,8 +14,13 @@ body {
     align-items: center;
 }
 
+p {
+    color: #696565;
+    font-size: 14.5px;
+}
+
 .section {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .one {
@@ -22,7 +29,7 @@ body {
     align-items: center;
     background: #FFFFFF;
     border-radius: 12px;
-    max-width: 900px;
+    max-width: 830px;
     max-height: 300px;
 }
 
@@ -61,8 +68,10 @@ body {
 .two {
     display: grid;
     gap: 20px;
-    max-width: 870px;
-    grid-template-columns: 30% 70%;
+    max-width: 800px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 550px 120px 180px;
+    margin-left: -25px;
 }
 
 #skills {
@@ -70,19 +79,18 @@ body {
     flex-direction: column;
     background: #FFFFFF;
     border-radius: 12px;
+    grid-area: 1/1/3/2;
 }
 
 #skill {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin: 10px 0;
 }
 
-#blog {
-    background: #FFF;
-    border-radius: 12px;
-    padding: 0 30px;
+#skills h3 {
+    text-align: center;
 }
 
 #symbol {
@@ -90,6 +98,132 @@ body {
     height: 50px;
 }
 
+#blog {
+    background: #FFF;
+    border-radius: 12px;
+    padding: 20px 30px;
+}
+
+#tricks {
+    display: flex;
+    align-items: center;
+}
+
+#tricks img {
+    width: 65%;
+    border-radius: 12px;
+}
+
+#blog a {
+    text-decoration: none;
+    color: #2F80ED;
+}
+
+#continue {
+    display: block;
+    text-align: end;
+}
+
+#experiences {
+    background: #FFF;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+#certificates {
+    display: flex;
+    background: #FFF;
+    border-radius: 12px;
+    grid-area: 2/2/4/3;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.certificate .button {
+    margin-top: 10px;
+}
+
 .certificate img {
+    max-width: 200px;
+    height: 250px;
+    border: 5px solid rgb(102, 93, 93);
+    border-radius: 12px;
+}
+
+.three {
+    width: 820px;
+    background: #FFF;
+    border-radius: 12px;
+    padding: 0 0 20px 20px;
+}
+
+#projects {
+    padding: 0 20px;
+}
+
+.four {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 15px;
+    margin-left: -25px;
+}
+
+.project {
+    padding: 20px;
+    background: #FFF;
+    border-radius: 12px;
+}
+
+#project-photo {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.button {
     width: 100px;
+    height: 35px;
+    border: 2px solid rgb(41, 33, 33);
+    border-radius: 8px;
+    font-weight: 550;
+    background: #689ee6;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    outline: none;
+}
+
+.button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.demo {
+    background: #689ee6;
+    margin-right: 10px;
+}
+
+.code {
+    background: #FFF;
+}
+
+.code a {
+    color: #689ee6;
+}
+
+#footer {
+    padding: 40px 0;
 }
